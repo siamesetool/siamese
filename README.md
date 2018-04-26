@@ -21,14 +21,14 @@ search speed and accuracy. The tool is scalable to a corpus of hundreds million 
       Example: java -jar siamese.jar -cf config.properties
       Example: java -jar siamese.jar -cf config.properties -i /my/input/dir -o /my/output/dir -c index
        -c,--command <arg>        [optional] command to execute [index, search].
-                                      This will override the configuration file.
+                                 This will override the configuration file.
        -cf,--configFile <arg>    [* requried *] a configuration file
        -h,--help                 <optional> print help
        -i,--inputFolder <arg>    [optional] location of the input files (for
-                                      index or query). This will override the
-                                      configuration file.
+                                 index or query). This will override the
+                                 configuration file.
        -o,--outputFolder <arg>   [optional] location of the search result file.
-                                      This will override the configuration file.
+                                 This will override the configuration file.
     ```
     * **BigCloneEval:** BigCloneEval is a tool for automated recall evaluation based on BigCloneBench data set. It can be downloaded from: [BigCloneBench](https://github.com/jeffsvajlenko/BigCloneEval)
 * **Data sets**: the data sets that we used to evaluate Siamese are listed below:
