@@ -34,26 +34,27 @@ search speed and accuracy. The tool is scalable to a corpus of hundreds million 
     ```
     2\. An example of running Siamese to index a project "foo".
 
-```bash
-java -jar siamese-0.0.6-SNAPSHOT.jar -c index -i /my/dir/foo -cf config.properties
-```
+    ```bash
+    java -jar siamese-0.0.6-SNAPSHOT.jar -c index -i /my/dir/foo -cf config.properties
+    ```
 
-3\. Then, tell Siamese to search for clones of "foo" in "bar".
-```bash
-java -jar siamese-0.0.6-SNAPSHOT.jar -c search -i /my/dir/bar -o /my/output/dir -cf config.properties
-```
+    3\. Then, tell Siamese to search for clones of "foo" in "bar".
+    ```bash
+    java -jar siamese-0.0.6-SNAPSHOT.jar -c search -i /my/dir/bar -o /my/output/dir -cf config.properties
+    ```
 
-4\. After Siamese finishes its execution, the output file (clone classes) will be located at ```/my/output/dir```.
-The file will be using the pattern ```data_qr_<timestamp>.xml```.
+    4\. After Siamese finishes its execution, the output file (clone classes) will be located at ```/my/output/dir```.
+    The file will be using the pattern ```data_qr_<timestamp>.xml```.
 
-5\. If you want to enforce similarity threshold on the search results, 
-modify the ```config.properties``` file to enable fuzzywuzzy or tokenratio (recommended) similarity.
-Choose any similarity thresholds you like for the four code representations (r0, r1, r2, r3) respectively.
+    5\. If you want to enforce similarity threshold on the search results, 
+    modify the ```config.properties``` file to enable fuzzywuzzy or tokenratio (recommended) similarity.
+    Choose any similarity thresholds you like for the four code representations (r0, r1, r2, r3) respectively.
 
-```bash
-computeSimilarity : tokenratio
-simThreshold      : 50%,50%,50%,50%
-```
+    ```bash
+    computeSimilarity : tokenratio
+    simThreshold      : 50%,50%,50%,50%
+    ```
+    
     * **BigCloneEval:** BigCloneEval is a tool for automated recall evaluation based on BigCloneBench data set. It can be downloaded from: [BigCloneBench](https://github.com/jeffsvajlenko/BigCloneEval)
 * **Data sets**: the data sets that we used to evaluate Siamese are listed below:
     * **OCD (Obfuscation/Compilcation/Decompilation)** data set. The OCD data set is from a study by Ragkhitwetsagul et al. and can be found here: [OCD data set](http://crest.cs.ucl.ac.uk/resources/cloplag/).
