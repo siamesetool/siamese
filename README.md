@@ -38,7 +38,7 @@ search speed and accuracy. The tool is scalable to a corpus of hundreds million 
         java -jar siamese-0.0.6-SNAPSHOT.jar -c index -i /my/dir/foo -cf config.properties
         ```
     
-        3\. Then, tell Siamese to search for clones of "foo" in "bar".
+        3\. Then, tell Siamese to search for clones of "bar" in "foo".
         ```bash
         java -jar siamese-0.0.6-SNAPSHOT.jar -c search -i /my/dir/bar -o /my/output/dir -cf config.properties
         ```
