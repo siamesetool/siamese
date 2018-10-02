@@ -9,7 +9,7 @@ search speed and accuracy. The tool is scalable to a corpus of hundreds million 
 
 ## Downloads
 * **Tool**:
-    * **Siamese:** Siamese executable can be downloaded here: [Siamese v. 0.5](https://drive.google.com/open?id=1lQX4SvQbxi9WYH4ndRilc_s45gBsi0Sx). Please make sure you have Java 8 installed on your machine. To execute Siamese, unzip the file and follow the steps below:
+    * **Siamese:** Siamese executable can be downloaded here: [Siamese v. 0.6](https://drive.google.com/open?id=1lQX4SvQbxi9WYH4ndRilc_s45gBsi0Sx). Please make sure you have Java 8 installed on your machine. To execute Siamese, unzip the file and follow the steps below:
     ```bash
     $cd siamese
     $./elasticsearch-2.2.0/bin/elasticsearch -d
